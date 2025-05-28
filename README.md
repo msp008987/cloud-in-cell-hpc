@@ -9,6 +9,7 @@ Efficient parallel implementation of **bilinear interpolation** from scattered 2
 Given a set of scattered 2D points $(x_i, y_i)$, interpolate values onto a structured $N_X \times N_Y$ mesh using the **Cloud-in-Cell (CIC)** method — a bilinear interpolation approach widely used in simulations, graphics, and numerical modeling.
 
 Problem description is available at [`Problem_description.pdf`](./reports/Problem_description.pdf).
+
 ---
 
 ## 🚀 Key Highlights
