@@ -6,7 +6,7 @@ Efficient parallel implementation of **bilinear interpolation** from scattered 2
 
 ## 📊 Problem Statement
 
-Given a set of scattered 2D points $(x_i, y_i)$, interpolate values onto a structured $X_CELLS \times Y_CELLS$ mesh using the **Cloud-in-Cell (CIC)** method — a bilinear interpolation approach widely used in simulations, graphics, and numerical modeling.
+Given a set of scattered 2D points $(x_i, y_i)$, interpolate values onto a structured $N_X \times N_Y$ mesh using the **Cloud-in-Cell (CIC)** method — a bilinear interpolation approach widely used in simulations, graphics, and numerical modeling.
 
 ---
 
@@ -94,7 +94,7 @@ gcc -fopenmp src/cic_parallel_optimized.c -o cic_parallel_optimized
 ./cic_parallel_optimized  sample_input_file.bin  8
 ```
 
-* sample_input_file.bin is the input file generated using src/input_fileMaker.c
+* `sample_input_file.bin` is the input file generated using `src/input_fileMaker.c`
 * `8` is the number of OpenMP threads
 * Output is written to `Mesh1.out`
 
@@ -103,6 +103,6 @@ gcc -fopenmp src/cic_parallel_optimized.c -o cic_parallel_optimized
 ## 📜 Report
 
 Detailed analysis, hardware specifications, graphs, and theoretical insight are available in:
-[`Implementation_report.pdf`](./Implementation_report.pdf)
+[`Implementation_report.pdf`](./reports/Implementation_report.pdf)
 
 ---
